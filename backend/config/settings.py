@@ -30,6 +30,7 @@ DEBUG = os.getenv("DEBUG", "False").lower() == "true"
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
+    "otp-user-login-api.onrender.com",
 ]
 
 
