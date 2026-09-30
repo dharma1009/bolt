@@ -21,7 +21,7 @@ class RegisterView(APIView):
         if not serializer.is_valid():
             return Response(
                 {
-                    "message": "Regist___________ failed",
+                    "message": "Account Already exists",
                     "errors": serializer.errors,
                 },
                 status=status.HTTP_400_BAD_REQUEST,
