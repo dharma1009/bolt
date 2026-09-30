@@ -139,11 +139,15 @@ MAILERS = {
         'BACKEND': 'django.core.mail.backends.console.EmailBackend',
     },
 }
-
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://localhost:5174",
-] 
+    "https://otp-user-login-frontend.vercel.app/",
+]
+CSRF_TRUSTED_ORIGINS = [
+    "https://otp-user-login-frontend.vercel.app/",
+    
+]
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
